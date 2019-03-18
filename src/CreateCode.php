@@ -22,13 +22,12 @@ class CreateCode
     /**
      * 创建条形码
      * @param $data 条形码内的数据
-     * @param Response $response EASYSWOOLE Response对象
      * @param null $filename 需要保存时 保存的文件名 不传则返回图片流
      * @return bool
      */
-    public function createCode($data,Response $response,$filename = null){
+    public function createCode($data,$filename = null){
         $code =  (new Pwd(10))->encode($data);
-        return (new Barcode($code))->draw($filename,$response);
+        return (new Barcode($code))->draw($filename);
     }
 
     /**

@@ -311,7 +311,6 @@ final class Barcode {
 			imagegif($img);
             $contents = ob_get_clean();
             imagedestroy($img);
-            $response->withHeader('Content-type','image/gif');
             return $contents;
 		}
 		
