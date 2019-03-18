@@ -1,0 +1,18 @@
+{
+    "autoload": {
+    	"psr-4": {
+        	"Lsclh\\Barcode\\": "src/"
+		}
+    },
+    "name": "lsclh/barcode",
+    "description": "一微码生成",
+    "type": "library",
+    "authors": [
+        {
+            "name": "cheng",
+            "email": "1019759208@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
